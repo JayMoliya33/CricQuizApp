@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<resources>
+
+    <!-- Using Base.Theme because AppCompat 26.1.0 dependency has issues with NoActionBar style -->
+    <style parent="Theme.AppCompat.Light.DarkActionBar" name="AppTheme">
+
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorTrueButton</item>
+    </style>
+
+    <!-- Both buttons share a similar style attibutes so we can put them here -->
+    <style parent="Widget.AppCompat.Button.Colored" name="buttonStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:layout_margin">@dimen/button_spacing_margin</item>
+    </style>
+
+</resources>

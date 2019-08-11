@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ProgressBar
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:indeterminate="false"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/progress_bar"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/score"
+        android:padding="10dp"
+        android:text="@string/initial_score"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/progress_bar"/>
+
+    <TextView
+        android:id="@+id/question_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="134dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="@string/question_1"
+        android:textColor="@color/colorText"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="20dp"
+        android:layout_above="@id/score"
+        android:layout_centerHorizontal="true">
+
+        <Button android:background="@color/colorTrueButton"
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            style="@style/buttonStyle"
+            android:id="@+id/true_button"
+            android:text="@string/true_button"/>
+
+        <Button android:background="@color/colorFalseButton"
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            style="@style/buttonStyle"
+            android:id="@+id/false_button"
+            android:text="@string/false_button"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
